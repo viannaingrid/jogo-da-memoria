@@ -1,26 +1,28 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: #fc1e8a;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 
 .container {
+  margin-top: 15px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
+  background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 109%);
   padding: 40px 60px;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.5);
 }
-
-h2 {
+.container h2 {
   font-size: 3em;
   color: #fff;
   text-transform: uppercase;
@@ -46,7 +48,6 @@ h2 {
 }
 
 .game {
-  border: solid white;
   width: 550px;
   height: 560px;
   display: flex;
@@ -84,4 +85,27 @@ h2 {
 
 .boxOpen::after, .boxMatch::after {
   transform: rotateY(180deg);
+}
+
+footer {
+  margin-top: 28px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #3f0d57;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.5);
+}
+footer .text {
+  color: #fff;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .text a {
+  margin-left: 35px;
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
