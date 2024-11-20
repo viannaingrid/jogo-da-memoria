@@ -36,4 +36,8 @@ h2 {
           text-decoration: uppercase;
   cursor: pointer;
   font-weight: 600;
+}
+.reset:focus {
+  color: #ec38bc;
+  background-color: #262809;
 }/*# sourceMappingURL=main.css.map */
